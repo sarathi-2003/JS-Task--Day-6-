@@ -1,0 +1,26 @@
+3.Write a person class to hold all the details
+
+class Person {
+  constructor(firstname, lastname, age, country, city) {
+    this.firstName = firstname
+    this.lastName = lastname
+    this.age = age
+    this.country = country
+    this.city = city
+    this.score = 0
+    this.skills = []
+  }
+  getFullName() {
+    const fullName = this.firstName + ' ' + this.lastName
+    return fullName
+  }
+}
+
+const person1 = new Person('partha', 'sarathi', 20, 'india', 'chennai')
+const person2 = new Person('manoj', 'kumar', 22, 'india', 'chennai')
+
+console.log(person1.score)
+console.log(person2.score)
+
+console.log(person1.skills)
+console.log(person2.skills)
